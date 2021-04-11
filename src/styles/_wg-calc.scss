@@ -1,0 +1,122 @@
+$calc-width: ($calc-key-width + 5px) * 4;
+$calc-height: ($calc-key-height + 5px) * 7;
+$calc-pad-height: $calc-key-height * 5;
+.wg-calc {
+	& {
+		margin: 50px;
+		@extend %flex-row-wrap-center;
+
+		width: $calc-width;
+		height: $calc-height;
+
+		border: 1px solid #939393;
+		border-radius: 15px;
+
+		background-color: $calc-bg;
+	}
+
+	&__display {
+		font-size: 45px;
+		color: $calc-fg;
+		background: transparent;
+		display: block;
+		border: 0;
+		width: $calc-width;
+		height: $calc-key-height * 2;
+		text-align: right;
+		padding: 0 10px;
+		font-family: 'HelveticaNeue-UltraLight', 'Helvetica Ultra Light',
+			'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-weight: 100;
+	}
+
+	&__pad {
+		@extend %flex-row-wrap-center;
+
+		width: $calc-width + 3px;
+		height: $calc-pad-height;
+		// left-side
+		&--miscs {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: ($calc-key-width + 3px) * 3;
+			height: $calc-key-height;
+		}
+		&--nums {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: ($calc-key-width + 3px) * 3;
+			height: $calc-key-height * 4;
+		}
+		// right-side
+		&--funcs {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			width: $calc-key-width;
+			height: $calc-pad-height;
+		}
+	}
+	&__side {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: $calc-width;
+		height: $calc-pad-height;
+		&--left {
+			width: ($calc-key-width + 2px) * 3;
+			height: $calc-pad-height;
+		}
+		&--right {
+			width: $calc-key-width + 2px;
+			height: $calc-pad-height;
+		}
+	}
+	&__key {
+		width: $calc-key-width;
+		height: $calc-key-height;
+		border: 0;
+		margin-left: 1px;
+		font-family: 'HelveticaNeue-UltraLight', 'Helvetica Ultra Light',
+			'Helvetica Neue', Helvetica, Arial, sans-serif;
+		&[data-key='0'] {
+			width: $calc-key-width * 2;
+		}
+		&--num {
+			background: $calc-key-num-bg;
+			font-family: 'HelveticaNeue-Light', 'Helvetica Light',
+				'Helvetica Neue', Helvetica, Arial, sans-serif;
+			&:active {
+				background-color: darken($calc-key-num-bg, 15);
+			}
+		}
+		&--func {
+			background: $calc-key-func-bg;
+			color: $calc-fg;
+			// font-size: 25px;
+			&:active {
+				background-color: darken($calc-key-func-bg, 15);
+			}
+		}
+		&--misc {
+			background: $calc-key-misc-bg;
+			// font-size: 20px;
+			font-family: 'HelveticaNeue-Light', 'Helvetica Light',
+				'Helvetica Neue', Helvetica, Arial, sans-serif;
+			&:active {
+				background-color: darken($calc-key-misc-bg, 15%);
+			}
+		}
+	}
+
+	&__key {
+		&[data-key='0'] {
+			border-bottom-left-radius: 15px;
+		}
+		&[data-key='equal'] {
+			border-bottom-right-radius: 15px;
+		}
+	}
+}

@@ -1,0 +1,52 @@
+$calc-bg: #4b4b4ba6;
+$calc-fg: #ffffff;
+$calc-key-misc-bg: #d6d6d6;
+$calc-key-func-bg: #ff8c00;
+$calc-key-num-bg: #e0e0e0;
+$calc-key-color: #000000;
+
+$calc-key-width: 57px;
+$calc-key-height: 47px;
+
+// -------------------------------- //
+@mixin flex {
+	display: flex;
+}
+
+@mixin flex-align($align: 'center') {
+	justify-content: $align;
+	align-items: $align;
+	align-content: $align;
+}
+@mixin flex-column($align: 'center', $wrap: true) {
+	@include flex;
+	@if ($wrap) {
+		flex-wrap: wrap;
+	} @else {
+		flex-wrap: nowrap;
+	}
+	@if ($align) {
+		@include flex-align($align);
+	}
+}
+@mixin flex-row($align: 'center', $wrap: true) {
+	@include flex;
+	flex-direction: row;
+	@if ($wrap) {
+		flex-wrap: wrap;
+	} @else {
+		flex-wrap: nowrap;
+	}
+
+	@if ($align) {
+		@include flex-align($align);
+	}
+}
+
+// --------------------------------- //
+%flex-row-wrap-center {
+	@include flex-row;
+}
+%flex-column-wrap-center {
+	@include flex-column;
+}
