@@ -1,5 +1,6 @@
-import Store from './../store';
+import { Store } from './../App';
 const useFunction = () => {
-	const { state, actions } = Store;
+	const { state, setState } = Store;
+	return { state, setState };
 };
 export default useFunction;

@@ -1,7 +1,7 @@
-import Store from './../store';
+import { Store } from './../App';
 const useInput = (text) => {
-	const { actions } = Store;
-	actions((state) => ({
+	const { setState } = Store;
+	setState((state) => ({
 		...state,
 		textInputed: `${state.textInputed}${text}`,
 	}));
