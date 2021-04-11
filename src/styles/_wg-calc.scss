@@ -43,20 +43,21 @@
 	&__bar {
 		&--miscs {
 			@extend %flex-row-wrap-center;
-			width: _width(3) + ($CALC_KEY_GAP * 12);
+			width: _width(3) + ($CALC_KEY_GAP * 9);
 			height: _height(1);
 			margin-bottom: $CALC_KEY_GAP;
 		}
-		&--nums {
+		&--numeric {
 			margin-top: $CALC_KEY_GAP;
 			@extend %flex-row-wrap-center;
-			width: _width(3) + ($CALC_KEY_GAP * 12);
+			width: _width(3) + ($CALC_KEY_GAP * 9);
 			height: _height(4);
 		}
-		&--funcs {
+		&--function {
+			margin-left: $CALC_KEY_GAP * -1;
 			@extend %flex-column-wrap-center;
 			width: _width(1);
-			height: _height(5) + ($CALC_KEY_GAP * 10);
+			height: _height(5) + ($CALC_KEY_GAP * 3);
 		}
 	}
 
@@ -73,7 +74,7 @@
 				@include variant(darken($CALC_COLOR--misc, 15%));
 			}
 		}
-		&--num {
+		&--number {
 			@include variant($CALC_COLOR--num, $--body-fg);
 			@include font($CALC_FONT--key, 22px);
 			margin-left: $CALC_KEY_GAP;
@@ -81,7 +82,7 @@
 				@include variant(darken($CALC_COLOR--num, 15%), $--body-fg);
 			}
 		}
-		&--func {
+		&--function {
 			@include variant($CALC_COLOR--func);
 			@include font($CALC_FONT--input, 25px);
 			&:active {
@@ -102,14 +103,14 @@
 			border-bottom-right-radius: $CALC_RADIUS;
 		}
 
-		&--num:nth-of-type(3n + 3),
-		&--num:last-child {
+		&--number:nth-of-type(3n + 3),
+		&--number:last-child {
 			margin-right: 0;
 		}
-		&--func {
+		&--function {
 			margin-right: 1px;
 		}
-		&--func:last-child {
+		&--function:last-child {
 			margin-bottom: -2px;
 		}
 	}
