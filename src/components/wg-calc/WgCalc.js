@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import WgDisplay from './WgDisplay';
-import WgPad from './WgPad';
+import WgPads from './WgPad';
 const WgCalc = ({ store }) => {
 	const { state, setState } = store;
 	function handleAddNumber({ target }) {
@@ -9,7 +9,7 @@ const WgCalc = ({ store }) => {
 	return (
 		<div className='wg-calc'>
 			<WgDisplay store={store} />
-			<WgPad store={store} />
+			<WgPads store={store} />
 		</div>
 	);
 };

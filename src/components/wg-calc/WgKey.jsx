@@ -1,14 +1,15 @@
 const WgKey = ({
-	'data-key': dataKey,
-	type = 'num',
+	'class-name': className = 'wg-calc__key--numeric',
 	text,
 	value,
-	method = () => {},
+	click = () => {},
 }) => {
 	return (
 		<button
-			className={`wg-calc__key wg-calc__key--${type}`}
-			data-key={dataKey}
+			className={`wg-calc__key ${className}`}
+			data-key={value}
+			title={`${value}(${text})`}
+			onClick={click}
 			value={value}>
 			{text}
 		</button>

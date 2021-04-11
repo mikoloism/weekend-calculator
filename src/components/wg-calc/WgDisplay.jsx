@@ -1,9 +1,13 @@
+const handleInput = (value) => {
+	console.log(value);
+};
 const WgDisplay = ({ store }) => {
 	return (
 		<input
-			class='wg-calc__display'
-			type='readonly'
-			inputMode='decimal'
+			className='wg-calc__display'
+			type='text'
+			inputMode='numeric'
+			onInput={handleInput}
 			value={'0'}
 		/>
 	);
