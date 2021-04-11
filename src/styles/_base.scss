@@ -1,22 +1,51 @@
-$calc-bg: #4b4b4ba6;
-$calc-fg: #ffffff;
-$calc-key-misc-bg: #d6d6d6;
-$calc-key-func-bg: #ff8c00;
-$calc-key-num-bg: #e0e0e0;
-$calc-key-color: #000000;
+$--body-bg: #ffebd2;
+$--body-fg: #303132;
+$CALC_COLOR--fg: #ffffff;
+$CALC_COLOR--bg: #4b4b4ba6;
 
-$calc-key-width: 57px;
-$calc-key-height: 47px;
+$CALC_COLOR--misc: #d6d6d6;
+$CALC_COLOR--func: #ff8c00;
+$CALC_COLOR--num: #e0e0e0;
+$CALC_COLOR--key-fg: #000000;
+
+$CALC_KEY_WIDTH: 57px;
+$CALC_KEY_HEIGHT: 47px;
+$CALC_KEY_GAP: 1px;
+
+$CALC_RADIUS: 6px;
+
+$CALC_FONT--key: 'HelveticaNeue-Light', 'Helvetica Light', 'Helvetica Neue',
+	Helvetica, Arial, sans-serif;
+$CALC_FONT--input: 'HelveticaNeue-UltraLight', 'Helvetica Ultra Light',
+	'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // -------------------------------- //
+@mixin font-weight($weight: 'thin') {
+	@if ($weight == 'thin') {
+		font-weight: 100;
+	} @else if($weight == 'light') {
+		font-weight: 300;
+	} @else if($weight == 'medium') {
+		font-weight: 500;
+	} @else if($weight == 'bold') {
+		font-weight: 700;
+	} @else {
+		font-weight: 400;
+	}
+}
+@mixin font($face: $CALC_FONT--input, $size: 1em, $weight: false) {
+	@include font-weight($weight);
+	font-family: $face;
+	font-size: $size;
+}
 @mixin flex {
 	display: flex;
 }
 
 @mixin flex-align($align: 'center') {
-	justify-content: $align;
-	align-items: $align;
-	align-content: $align;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
 }
 @mixin flex-column($align: 'center', $wrap: true) {
 	@include flex;
@@ -43,10 +72,39 @@ $calc-key-height: 47px;
 	}
 }
 
+@function _height($cel: 1) {
+	@return $CALC_KEY_HEIGHT * $cel;
+}
+@function _width($cel: 1) {
+	@return $CALC_KEY_WIDTH * $cel;
+}
+@mixin height($cel: 1) {
+	height: _height($cel);
+}
+@mixin width($cel: 1) {
+	width: _width($cel);
+}
+@mixin box($w: 1, $h: 1) {
+	@include width($w);
+	@include height($h);
+}
+
+@mixin variant($bg: $CALC_COLOR--bg, $fg: $CALC_COLOR--fg) {
+	background-color: $bg;
+	color: $fg;
+}
+
 // --------------------------------- //
 %flex-row-wrap-center {
 	@include flex-row;
 }
 %flex-column-wrap-center {
 	@include flex-column;
+}
+%CLEAR_INPUT {
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	box-shadow: none;
 }

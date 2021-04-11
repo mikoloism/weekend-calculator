@@ -4,13 +4,11 @@
 	margin: 0;
 }
 body {
-	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Ultra Light',
-		'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: 100;
-	background: #ffebd2;
+	@include font($CALC_FONT--input, $weight: 'thin');
+	@include variant($--body-bg, $CALC_COLOR--bg);
 }
 button,
 input {
-	padding: 0;
-	margin: 0;
+	@extend %CLEAR_INPUT;
+	// @include font;
 }
