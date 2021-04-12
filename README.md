@@ -8,6 +8,7 @@ the minimal react-js calculator app using as widget
 
 -   [screenshot](#screenshots)
 -   [setup](#setup)
+-   [LICENSE](#license)
 
 ## Screenshots
 
@@ -57,9 +58,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 ### Making a Progressive Web App
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-## LICENSE
-Under [MIT](./LICENSE) License
 
 ### Advanced Configuration
 
