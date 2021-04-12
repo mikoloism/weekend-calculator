@@ -32,7 +32,7 @@ the minimal react-js calculator app using as widget
     The build is minified and the filenames include the hashes.\
     Your app is ready to be deployed!\
     See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
--   For Ejecting, use
+-   For Ejecting, use\
     `$ yarn eject`
     **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
     If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.\
