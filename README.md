@@ -2,9 +2,8 @@
 
 the minimal react-js calculator app using as widget
 
-> i use this [CODEPEN](https://codepen.io/sfrisk/pen/BymJer?editors=0100 "Apple's Calculator") from [Sarah Frisk](https://codepen.io/sfrisk '@sfrisk on codepen') ❤️\
-> [Sarah Frisk on Github](https://github.com/sfrisk "sarah frisk on github")\
-> [Sarah Frisk Blog](https://sarahfrisk.com/ "sarah frisk website")
+> I used this [CODEPEN](https://codepen.io/sfrisk/pen/BymJer?editors=0100 "Apple's Calculator") from [Sarah Frisk](https://codepen.io/sfrisk '@sfrisk on codepen') :heart:\
+> [Github](https://github.com/sfrisk "sarah frisk on github") | [Codepen](https://codepen.io/sfrisk '@sfrisk on codepen') | [Blog](https://sarahfrisk.com/ "sarah frisk website")
 > 
 ## Menu
 
