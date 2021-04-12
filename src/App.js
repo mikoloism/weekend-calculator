@@ -4,8 +4,7 @@ import { useState } from 'react';
 const Store = { state: null, setState: null };
 function App() {
 	const [state, setState] = useState({
-		textInputed: '0',
-		valueInputed: 0,
+		value: 0,
 	});
 	Store.state = state;
 	Store.setState = setState;
