@@ -8,6 +8,7 @@ const WgKey = ({
 		<button
 			className={`wg-calc__key ${className}`}
 			data-key={value}
+			data-value={text}
 			title={`${value}(${text})`}
 			onClick={click}
 			value={value}>

@@ -2,7 +2,7 @@ import WgPadMisc from './pads/miscs';
 import WgPadNumeric from './pads/numeric';
 import WgPadFunction from './pads/function';
 
-const WgPad = ({ children, store }) => {
+const WgPad = () => {
 	return (
 		<div className='wg-calc__pad'>
 			<div className='wg-calc__side wg-calc__side--left'>

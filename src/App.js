@@ -8,7 +8,7 @@ function App() {
 	});
 	Store.state = state;
 	Store.setState = setState;
-	return <WgCalc store={{ state, setState }} />;
+	return <WgCalc />;
 }
 
 export { Store };
