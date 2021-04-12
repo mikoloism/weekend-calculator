@@ -2,7 +2,7 @@
 	& {
 		// margin: 15% 25%; // if using as production, you should remove this line
 		@extend %flex-row-wrap-center;
-		width: _width(4) + ($CALC_KEY_GAP * 11);
+		width: _width(4) + ($CALC_KEY_GAP * 10);
 		height: _height(7) + ($CALC_KEY_GAP * 10);
 		border: 1px solid #343434;
 		border-radius: $CALC_RADIUS;
@@ -45,7 +45,7 @@
 			@extend %flex-row-wrap-center;
 			width: _width(3) + ($CALC_KEY_GAP * 9);
 			height: _height(1);
-			margin-bottom: $CALC_KEY_GAP * 1.1;
+			margin-bottom: $CALC_KEY_GAP * 2;
 		}
 		&--numeric {
 			margin-top: $CALC_KEY_GAP;
@@ -69,7 +69,7 @@
 		&--misc {
 			@include variant($CALC_COLOR--misc, $--body-fg);
 			@include font($CALC_FONT--key, 20px);
-			// margin-left: $CALC_KEY_GAP;
+			margin-left: $CALC_KEY_GAP;
 			&:active {
 				@include variant(darken($CALC_COLOR--misc, 15%));
 			}
