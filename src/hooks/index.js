@@ -1,2 +1,4 @@
 import UseKey from './useKey';
-export { UseKey };
+import UseMisc from './useMisc';
+import UseFunction from './useFunction';
+export { UseKey, UseMisc, UseFunction };
