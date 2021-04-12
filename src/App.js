@@ -8,7 +8,13 @@ function App() {
 	});
 	Store.state = state;
 	Store.setState = setState;
-	return <WgCalc />;
+	return (
+		<div className='container'>
+			<div className='wrapper'>
+				<WgCalc />
+			</div>
+		</div>
+	);
 }
 
 export { Store };

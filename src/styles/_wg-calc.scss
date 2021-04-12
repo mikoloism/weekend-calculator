@@ -1,8 +1,8 @@
 .wg-calc {
 	& {
-		margin: 15% 25%; // if using as production, you should remove this line
+		// margin: 15% 25%; // if using as production, you should remove this line
 		@extend %flex-row-wrap-center;
-		width: _width(4) + ($CALC_KEY_GAP * 10);
+		width: _width(4) + ($CALC_KEY_GAP * 11);
 		height: _height(7) + ($CALC_KEY_GAP * 10);
 		border: 1px solid #343434;
 		border-radius: $CALC_RADIUS;
@@ -45,7 +45,7 @@
 			@extend %flex-row-wrap-center;
 			width: _width(3) + ($CALC_KEY_GAP * 9);
 			height: _height(1);
-			margin-bottom: $CALC_KEY_GAP;
+			margin-bottom: $CALC_KEY_GAP * 1.1;
 		}
 		&--numeric {
 			margin-top: $CALC_KEY_GAP;
@@ -106,6 +106,10 @@
 		&--number:nth-of-type(3n + 3),
 		&--number:last-child {
 			margin-right: 0;
+		}
+		&--function:first-child {
+			margin-top: $CALC_KEY_GAP * -1;
+			margin-bottom: $CALC_KEY_GAP * 1;
 		}
 		&--function {
 			margin-right: 1px;
