@@ -33,7 +33,7 @@ the minimal react-js calculator app using as widget
     Your app is ready to be deployed!\
     See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 -   For Ejecting, use\
-    `$ yarn eject`
+    `$ yarn eject`\
     **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
     If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.\
     Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them.\
