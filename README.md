@@ -19,7 +19,7 @@ the minimal react-js calculator app using as widget
 
 ![react-widget-calculator](./screenshots/screenshot.png)
 
-[:arrow-up: back top](#index)
+[⬆️ back to top](#index)
 
 
 ## License
