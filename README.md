@@ -9,18 +9,18 @@ the minimal react-js calculator app using as widget
 > I used this [CODEPEN](https://codepen.io/sfrisk/pen/BymJer?editors=0100 "Apple's Calculator") from [Sarah Frisk](https://codepen.io/sfrisk '@sfrisk on codepen') :heart:\
 > [Github](https://github.com/sfrisk "sarah frisk on github") | [Codepen](https://codepen.io/sfrisk '@sfrisk on codepen') | [Blog](https://sarahfrisk.com/ "sarah frisk website")
 > 
-## Menu
+## Index
 
 -   [screenshot](#screenshots)
 -   [setup](./setup.md)
--   [LICENSE](#license)
+-   [License](#license)
 
 ## Screenshots
 
 ![react-widget-calculator](./screenshots/screenshot.png)
 
-[back top](#menu)
+[:arrow-up: back top](#index)
 
 
-## LICENSE
+## License
 Under [MIT](./LICENSE) License
