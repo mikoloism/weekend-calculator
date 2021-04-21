@@ -11,8 +11,8 @@ the minimal react-js calculator app using as widget
 > 
 ## Index
 
--   [screenshot](#screenshots)
--   [setup](./setup.md)
+-   [Screenshot](#screenshots)
+-   [Setup](./setup.md)
 -   [License](#license)
 
 ## Screenshots
