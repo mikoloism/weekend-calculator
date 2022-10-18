@@ -1,4 +1,4 @@
-# Calculator with React-JS [![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/miko-github/calculator-with-react/react)](https://github.com/facebook/react) [![GitHub repo size](https://img.shields.io/github/repo-size/miko-github/calculator-with-react)](#) [![GitHub](https://img.shields.io/github/license/miko-github/calculator-with-react)](./LICENSE)
+# Re-created simple Calculator with React.js [![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/miko-github/calculator-with-react/react)](https://github.com/facebook/react) [![GitHub repo size](https://img.shields.io/github/repo-size/miko-github/calculator-with-react)](#) [![GitHub](https://img.shields.io/github/license/miko-github/calculator-with-react)](./LICENSE)
 
 the minimal react-js calculator app using as widget
 
